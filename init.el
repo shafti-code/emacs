@@ -1,18 +1,55 @@
+;; load jblow's colorscheme from an .el file
+(load "~/.emacs.d/jblow_colors.el")
+
+
 (setq ring-bell-function 'ignore)
 
-;; this is just a bunch of shit ill organise this once i get the hang of it
+;;IMPORTANT this is just a bunch of shit ill organise this once i get the hang of it
 
+;; those two lines make emacs not spill garbage all over your file system
+;; no more #file# and file~ garbage
 (setq auto-save-default nil)
+(setq make-backup-files nil)
 
 
+;; there is a bunch of ui shit by default this disables all of those
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
+
+;; we like line numbers dont we ? 
 (display-line-numbers-mode)
 (setq display-line-numbers 'relative)
-(transient-mark-mode 1)
-(require 'org)
+
+
+;; this is just some code that evil gives you
+;; Set up package.el to work with MELPA
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+(package-refresh-contents)
+
+
+;; ---- download evil mode {
+
+
+;; Download Evil
+(unless (package-installed-p 'evil)
+  (package-install 'evil))
+
+;; Enable Evil
+(require 'evil)
+(evil-mode 1)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages '(evil)))
+
+;; ---- download evil mode }
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,31 +70,3 @@
  '(region ((t (:background "blue"))))
  '(widget-field-face ((t (:foreground "white"))) t)
  '(widget-single-line-field-face ((t (:background "darkgray"))) t))
-
-(global-font-lock-mode 1)
-(set-cursor-color "lightgreen")
-(set-background-color "#072626")
-(global-set-key [C-return] 'save-buffer)
-
-
-(set-face-foreground 'font-lock-builtin-face         "lightgreen")
-;; Set up package.el to work with MELPA
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa" . "https://melpa.org/packages/"))
-(package-initialize)
-(package-refresh-contents)
-
-;; Download Evil
-(unless (package-installed-p 'evil)
-  (package-install 'evil))
-
-;; Enable Evil
-(require 'evil)
-(evil-mode 1)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(package-selected-packages nil))
