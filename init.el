@@ -1,7 +1,13 @@
 (setq ring-bell-function 'ignore)
+
+;; this is just a bunch of shit ill organise this once i get the hang of it
+
+(setq auto-save-default nil)
+
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
-(scroll-bar-mode t)
+(scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
 (display-line-numbers-mode)
 (setq display-line-numbers 'relative)
