@@ -22,6 +22,10 @@
 ;; we like line numbers dont we ? 
 (global-display-line-numbers-mode)
 (setq display-line-numbers-type 'relative)
+;; 4 spaces is the only acceptable indentation
+
+(setq indent-tabs-mode nil)
+(setq tab-width 4)
 
 
 
@@ -32,6 +36,8 @@
              '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
 
+;; make sure packages are only installed if you dont have them
+(unless package-archive-contents (package-refresh-contents))
 
 ;; ---- download evil mode {
 
