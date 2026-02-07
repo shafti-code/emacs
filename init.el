@@ -1,6 +1,7 @@
 ;; load jblow's colorscheme from an .el file
 (load "~/.emacs.d/jblow_colors.el")
 
+(ido-mode 1)
 
 (setq ring-bell-function 'ignore)
 
@@ -15,12 +16,13 @@
 ;; there is a bunch of ui shit by default this disables all of those
 (tool-bar-mode -1)
 (menu-bar-mode -1)
+(tab-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
 
 ;; we like line numbers dont we ? 
-(display-line-numbers-mode)
-(setq display-line-numbers 'relative)
+(global-display-line-numbers-mode)
+(setq display-line-numbers-type 'relative)
 
 
 ;; this is just some code that evil gives you
@@ -47,7 +49,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(evil)))
+ '(package-selected-packages '(evil php-mode)))
 
 ;; ---- download evil mode }
 (custom-set-faces
@@ -70,3 +72,9 @@
  '(region ((t (:background "blue"))))
  '(widget-field-face ((t (:foreground "white"))) t)
  '(widget-single-line-field-face ((t (:background "darkgray"))) t))
+
+;; vi mode for package list
+(evil-set-initial-state 'package-menu-mode 'motion)
+
+(require 'php-mode)
+(add-to-list 'auto-mode-alist '("\\.php\\'" . php-mode))
