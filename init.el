@@ -19,10 +19,10 @@
 (tab-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-splash-screen t)
-
 ;; we like line numbers dont we ? 
 (global-display-line-numbers-mode)
 (setq display-line-numbers-type 'relative)
+
 
 
 ;; this is just some code that evil gives you
@@ -31,7 +31,6 @@
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
 (package-initialize)
-(package-refresh-contents)
 
 
 ;; ---- download evil mode {

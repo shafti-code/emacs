@@ -1,0 +1,40 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/shafti/" . ".emacs.d/")
+ ("/Users/shafti/Projects/img2ascii/" . "src/")
+ ("/Users/shafti/Projects/" . "img2ascii/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/shafti/.emacs.d/"
+ "/Users/shafti/Projects/img2ascii/src/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "main.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/shafti/.emacs.d/" (27015 28154 306467 332000) "jblow_colors.el" ".git/" "elpa/" ".gitignore" "init.el" "auto-save-list/" "ido.last" "../" "./")
+
+ ("/Users/shafti/" (27015 27498 338333 169000) "laptop piotrka/" "ubuntu@56.228.35.17" "startuptime.txt" ".zsh_sessions/" "\\" ".viminfo" ".bash_history" ".javacpp/" ".cache/" ".python_history" "Downloads/" "ssh_scripts/" "tmux_scripts/" ".Xauthority" "AndroidStudioProjects/" "Mood/" ".swiftpm/" "iubuntu@56.228.35.17" ".zcompcache/" "Documents/" "dots/" ".npm/" "Brewfile" ".zcompdump" ".Trash/" ".gradle/" "Applications/" "Movies/" ".ssh/" ".lmstudio/" "scripts/" ".john/" "git_logo.txt" "skibidconfig.txt" "notes/" "Public/" "audio/" "#.emacs#" "java_error_in_studio.hprof" ".lmstudio-home-pointer" ".cups/" ".android/" ".node_repl_history" ".emacs.d/" "todo/" "Storage/" ".backupzshrc" ".emulator_console_auth_token" ".cagent/" ".lesshst" "Library/" "Desktop/" ".zsh_history" "Postman/" ".nvm/" ".opencode/" ".zprofile" ".bun/" "Pictures/" "Projects/" ".local/" ".zshrc" "nix_stuff/" ".bashrc" "today.md" ".wget-hsts" ".CFUserTextEncoding" ".yarnrc" ".lldb/" "VirtualBox VMs/" "holy_c/" ".thumbnails/" ".DS_Store" ".terminfo/" ".vim/" ".designer/" "simple_templates/" ".docker/" ".skiko/" "refs.md" ".symfony5/" ".yarn/" ".cursor/" "prezentacja/" "videoidea.txt" "Music/" ".xmake/" ".junie/" ".config/" ".videoidea.txt.swp" "../" "./")
+
+ ("/Users/" (26945 29547 362786 882000) "Shared/" "shafti/" ".localized" "../" "./")
+
+ ("/Users/shafti/Projects/img2ascii/src/" (27015 26744 643174 820000) "main.c" "../" "./")
+
+ ("/Users/shafti/Projects/img2ascii/build/" (27015 25255 258565 144000) "bin" "../" "./")
+
+ ("/Users/shafti/Projects/img2ascii/" (27015 25003 255084 124000) "src/" "build/" "lib/" "take_a_seat.jpg" "stb/" "Makefile" "../" "./")
+
+ ("/Users/shafti/Projects/" (27015 22137 346436 372000) "ghostty/" "snake/" "holy/" "gamejam/" "websites/" "img2ascii/" "react/" "c/" "vim_motions/" "school/" "Android1/" "leaki/" "advent_of_code_2025/" "gi_setup/" "Gra_Terenowa/" "game_of_life/" "scraping_matematyka_szkolna/" "text_editor/" "zig_snkae/" "chat-api/" "chat_website/" "start.txt" "get-blogged/" "uemacs/" "leetcode-cpp/" "swift_bs/" "linux/" "3d-the-game/" "nix-config/" "reviewly/" "json/" "web-dev/" "yarn.lock" "uwufetch/" "generacja_innowacja/" "the cv in question/" "thing/" "filterly/" "account-manager/" "pico-sdk/" "builds/" "php/" "egzaminy_INF.04/" "Kosci/" "let-me-send-that-damnn-video-on-discord/" "probne/" "shafti-fun-website/" "c_shit/" "Hello World/" "zig_playground/" "node_modules/" "notes-api/" "tetris/" "ladybird/" "SpaceInvaders/" "foot/" "scrapingShit/" "love/" "video_games/" "idontlikeizumidots/" "cepepe/" "homepage/" "pope-discord-bot/" "gt/" "growing_array/" "calendar/" ".DS_Store" "HyDE/" "ocelot/" "space-war/" "zig/" "pico_demo/" "chat-with-websocets/" "c_idiocracy/" "cat/" "ncurses-archive/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
