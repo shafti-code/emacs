@@ -1,8 +1,16 @@
+;; get org mode
+(require 'org)
 ;; load jblow's colorscheme from an .el file
 (load "~/.emacs.d/jblow_colors.el")
 
 (ido-mode 1)
 
+;; some keybinds
+
+;; comment line just like the nvim gods intended
+(define-key evil-normal-state-map (kbd "gcc") 'comment-line)
+
+ 
 (setq ring-bell-function 'ignore)
 
 ;;IMPORTANT this is just a bunch of shit ill organise this once i get the hang of it
@@ -24,8 +32,9 @@
 (setq display-line-numbers-type 'relative)
 ;; 4 spaces is the only acceptable indentation
 
-(setq indent-tabs-mode nil)
-(setq tab-width 4)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
 
 
 
@@ -54,7 +63,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages '(evil php-mode)))
+ '(package-selected-packages '(evil magit php-mode)))
 
 ;; ---- download evil mode }
 (custom-set-faces
